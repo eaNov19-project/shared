@@ -5,7 +5,7 @@ mvn-build: mvn-clean
 	mvn install
 
 cp:
-	cp target/shared.jar deploy/shared.jar
+	cp target/shared.jar shared.jar
 
 git-add:
 	git add -A . && git commit -m "1.0"
