@@ -8,4 +8,9 @@ public class Utils {
     public static String newFeature(){
         return "Hey yall";
     }
+
+    public static int newInt(){
+
+        return 101;
+    }
 }
