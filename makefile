@@ -6,3 +6,6 @@ mvn-build: mvn-clean
 
 cp:
 	cp target/shared.jar shared.jar
+
+push: mvn-build cp
+	git push origin
