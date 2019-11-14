@@ -6,9 +6,3 @@ mvn-build: mvn-clean
 
 cp:
 	cp target/shared.jar shared.jar
-
-git-add:
-	git add -A . && git commit -m "1.0"
-
-git-push: mvn-build cp git-add
-	git push origin repository
