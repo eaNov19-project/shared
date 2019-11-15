@@ -1,24 +1,21 @@
 package ea.sof.shared.models;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Answer {
+@Data
+public class CommentQuestion {
     private String id;
     private String body;
-    private LocalDateTime date;
-    private Integer upvotes = 0;
-    private List<CommentAnswer> topComments = new ArrayList<>();
+    private LocalDateTime date = LocalDateTime.now();
 
     private String userId;
     private String userName;
+    private String questionId;
+
 }

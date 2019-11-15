@@ -19,7 +19,7 @@ public class Question {
     private LocalDateTime created;
     private LocalDateTime lastEdited;
     private Integer upvotes = 0;
-    private List<Comment> topComments;
+    private List<CommentAnswer> topComments;
     private List<Answer> topAnswers;
 
 }
