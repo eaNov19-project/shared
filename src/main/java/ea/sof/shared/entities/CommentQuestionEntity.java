@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 //@NoArgsConstructor
 //@Data
 //@Document(collection = "comments")
-public abstract class CommentEntity {
+public abstract class CommentQuestionEntity {
 //    @Id
     private String id;
     private String body;
