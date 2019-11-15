@@ -11,13 +11,13 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Comment {
+public class CommentAnswer {
     private String id;
     private String body;
     private LocalDateTime date = LocalDateTime.now();
 
     private String userId;
     private String userName;
-    private String questionId;
+    private String answerId;
 
 }
