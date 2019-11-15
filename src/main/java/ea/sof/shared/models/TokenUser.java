@@ -10,6 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TokenUser {
-    private String userId;
+    private Long userId;
     private String email;
 }
