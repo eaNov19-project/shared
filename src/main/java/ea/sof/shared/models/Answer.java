@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ import java.util.List;
 public class Answer {
     private String id;
     private String body;
-    private LocalDate date;
+    private LocalDateTime date;
     private Integer upvotes = 0;
     private List<Comment> topComments = new ArrayList<>();
 

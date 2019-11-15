@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 //@AllArgsConstructor
 //@NoArgsConstructor
@@ -15,7 +16,7 @@ public abstract class CommentEntity {
 //    @Id
     private String id;
     private String body;
-    private LocalDate date;
+    private LocalDateTime date;
 
     private String userId;
     private String questionId;
