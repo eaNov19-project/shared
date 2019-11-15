@@ -4,11 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-@AllArgsConstructor
+
 @Getter
 @Setter
+@AllArgsConstructor
 @NoArgsConstructor
-public class Auth {
+public class TokenUser {
+    private Long userId;
     private String email;
-    private String password;
 }
