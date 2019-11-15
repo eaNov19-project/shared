@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Auth {
-    private String username;
+    private String email;
     private String password;
 }

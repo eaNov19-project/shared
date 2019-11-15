@@ -10,5 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TokenUser {
-    private String username;
+    private String userId;
+    private String email;
 }
