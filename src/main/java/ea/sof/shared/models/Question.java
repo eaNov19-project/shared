@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,8 +20,8 @@ public class Question {
     private String userId;
     private String title;
     private String body;
-    private LocalDate created;
-    private LocalDate lastEdited;
+    private LocalDateTime created;
+    private LocalDateTime lastEdited;
     private Integer upvotes = 0;
     private List<Comment> topComments;
     private List<Answer> topAnswers;
