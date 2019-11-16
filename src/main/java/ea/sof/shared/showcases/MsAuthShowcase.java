@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 public interface MsAuthShowcase {
 
-    @GetMapping("/validate-token")
+    @GetMapping("/auth/validate-token")
     ResponseEntity<Response> validateToken(@RequestHeader(name="Authorization", required = false) String token);
 
-    @PostMapping("/add-auth")
+    @PostMapping("/auth/add-auth")
     ResponseEntity<Response> addAuth(@RequestBody Auth auth);
 
-    @PostMapping("/login")
+    @PostMapping("/auth/login")
     ResponseEntity<Response> login(@RequestBody Auth auth);
 }
