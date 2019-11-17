@@ -1,23 +1,19 @@
 package ea.sof.shared.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@Data
-//@Document(collection = "comments")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public abstract class CommentQuestionEntity {
-//    @Id
+
     private String id;
-    private String body;
-    private LocalDateTime date;
-
     private String userId;
+    private String body;
+    private LocalDateTime created;
     private String questionId;
-
 }
