@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kafka-global
+  namespace: default
+data:
+  # 1. new question
+  TOPIC_NEW_QUESTION: "topicNewQuestion"
+  SUBS_NEW_QUESTION_FILTER: "subsNewQuestionFilter"
+  SUBS_NEW_QUESTION_ELASTIC: "subsNewQuestionElastic"
+
+  # 2. new answer
+  TOPIC_NEW_ANSWER: "topicNewAnswer"
+  SUBS_NEW_ANSWER_SCORING: "subsNewAnswerScoring"
+  SUBS_NEW_ANSWER_FILTER: "subsNewAnswerFilter"
+  SUBS_NEW_ANSWER_NOTIFICATION: "subsNewAnswerNotification"
+
+  # 3. question voted
+  TOPIC_QUESTION_VOTED: "topicQuestionVoted"
+
+  # 4. answer voted up or down
+  TOPIC_ANSWER_VOTED: "topicAnswerVoted"
+  SUBS_ANSWER_VOTED: "subsAnswerVoted"
+
+  # 5. new question comment
+  TOPIC_NEW_QUESTION_COMMENT: "topicNewQuestionComment"
+  SUBS_NEW_QUESTION_COMMENT_TO_QUESTION: "subsNewQuestionCommentToQuestions"
+  SUBS_NEW_QUESTION_COMMENT_FILTER: "subsNewQuestionCommentFilter"
+
+  # 6. new question comment
+  TOPIC_NEW_ANSWER_COMMENT: "topicNewAnswerComment"
+  SUBS_NEW_ANSWER_COMMENT_TO_ANSWER: "subsNewAnswerCommentToAnswers"
+  SUBS_NEW_ANSWER_COMMENT_TO_QUESTION: "subsNewAnswerCommentToQuestions"
+  SUBS_NEW_ANSWER_COMMENT_FILTER: "subsNewAnswerCommentFilter"
+
+  # 7. when question banned
+  TOPIC_BAN_QUESTION: "topicBanQuestion"
+  SUBS_BANE_QUESTION_TO_QUESTION: "subsBanQuestionToQuestion"
+
+  # 8. when answer banned
+  TOPIC_BAN_ANSWER: "topicBanAnswer"
+  SUBS_BAN_ANSWER_TO_ANSWER: "subsBanAnswerToAnswer"
+
+  # 9. after banned answer updated in Answers service
+  TOPIC_UPDATE_BANNED_ANSWER: "topicUpdateBannedAnswer"
+  SUBS_UPDATE_BANNED_ANSWER_SCORE: "subsUpdateBannedAnswerScore"
+
+  # 10. when question commend banned
+  TOPIC_BAN_QUESTION_COMMENT: "topicBanQuestionComment"
+  SUBS_BAN_QUESTION_COMMENT_TO_COMMENT: "subsBanQuestionCommentToComments"
+
+  # 11. when answer commend banned
+  TOPIC_BAN_ANSWER_COMMENT: "topicBanAnswerComment"
+  SUBS_BAN_ANSWER_COMMENT_TO_COMMENT: "subsBanAnswerCommentToComments"
+
+  # 12. after banned QuestionComment updated in Comments service
+  TOPIC_UPDATE_QUESTION_COMMENT: "topicUpdateQuestionComment"
+  SUBS_UPDATE_QUESTION_COMMENT_TO_QUESTION: "subsUpdateQuestionCommentToQuestions"
+
+  # 13. after banned AnswerComment updated in Comments service
+  TOPIC_UPDATE_ANSWER_COMMENT: "topicUpdateAnswerComment"
+  SUBS_UPDATE_ANSWER_COMMENT_TO_ANSWER: "subsUpdateAnswerCommentToAnswers"
+
+  # 14. after AnswerComment list updated in Answers service
+  TOPIC_UPDATE_ANSWER_COMMENT_IN_QUESTION: "topicUpdateAnswerCommentInQuestion"
+  SUBS_UPDATE_ANSWER_COMMENT_IN_QUESTION_SCORE: "subsUpdateAnswerCommentInQuestionScore"
