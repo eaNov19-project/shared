@@ -18,6 +18,7 @@ public class Answer {
     private LocalDateTime date;
     private Integer upvotes = 0;
     private List<CommentAnswer> topComments = new ArrayList<>();
+    private String questionId;
 
     private String userId;
     private String userName;
