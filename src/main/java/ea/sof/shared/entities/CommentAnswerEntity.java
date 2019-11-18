@@ -20,6 +20,7 @@ public class CommentAnswerEntity {
     private LocalDateTime date;
 
     private String userId;
+    private String questionId;
     private String answerId;
 
     public CommentAnswer toCommentAnswerModel(){
