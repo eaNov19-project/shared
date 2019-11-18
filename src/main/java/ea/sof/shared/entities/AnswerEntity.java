@@ -1,6 +1,7 @@
 package ea.sof.shared.entities;
 
 
+import ea.sof.shared.queue_models.AnswerQueueModel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,9 +13,16 @@ import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class AnswerEntity {
+    public AnswerEntity(){}
+
+    public AnswerEntity(AnswerQueueModel model){
+        this.id = model.getId();
+        this.questionId = model.getQuestionId();
+        this.body = model.getBody();
+        this.active = model.getActive();
+    }
+
     private String id;
     private String userId;
     private String body;
@@ -24,6 +32,8 @@ public class AnswerEntity {
     private List<CommentAnswerEntity> topComments = new ArrayList<>();
     private String questionId;
     private Integer active;
+
+
     public void addAnswerComment(CommentAnswerEntity commentAnswerEntity) {
         topComments.add(commentAnswerEntity);
 

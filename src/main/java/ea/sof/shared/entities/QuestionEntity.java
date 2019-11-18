@@ -1,5 +1,6 @@
 package ea.sof.shared.entities;
 
+import ea.sof.shared.models.Answer;
 import ea.sof.shared.models.CommentQuestion;
 import ea.sof.shared.models.Question;
 import ea.sof.shared.queue_models.QuestionQueueModel;
@@ -8,10 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @NoArgsConstructor
@@ -52,6 +50,11 @@ public class QuestionEntity {
 		questionQueueModel.setTitle(this.title);
 		questionQueueModel.setBody(this.body);
 		return questionQueueModel;
+	}
+
+	public void addAnswer(AnswerEntity answerEntity) {
+		topAnswers.add(answerEntity);
+		topAnswers = topAnswers.stream().sorted(Comparator.comparingInt(AnswerEntity::getVotes).reversed()).limit(10).collect(Collectors.toList());
 	}
 
 	public void addQuestionComment(CommentQuestionEntity commentQuestionEntity) {
