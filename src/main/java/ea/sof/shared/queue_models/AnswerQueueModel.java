@@ -17,6 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 public class AnswerQueueModel {
     private String id;
+    private String questionId;
     private String body;
     private Integer active;
 }
