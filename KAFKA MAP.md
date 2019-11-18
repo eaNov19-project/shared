@@ -9,7 +9,8 @@ Pub/Sub - Messaging queue implementation from Google Cloud Platform.
 	- Payload: `QuestionQueueModel`
 	- Subscriber: `subsNewQuestionFilter` - for Content filter service
 	- Subscriber: `subsNewQuestionElastic` - for Elastic search service
-	
+	- Subscriber: `subsNewQuestionToUsers` - for Users service
+
 2. new answer
 	- Topic: `topicNewAnswer`
 	- Publisher: Answers service

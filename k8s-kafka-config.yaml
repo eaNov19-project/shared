@@ -4,10 +4,13 @@ metadata:
   name: kafka-global
   namespace: default
 data:
+  KAFKA_BOOTSTRAP_SERVERS: "34.70.124.18:31090,34.68.183.147:31090,35.223.233.128:31090"
+
   # 1. new question
   TOPIC_NEW_QUESTION: "topicNewQuestion"
   SUBS_NEW_QUESTION_FILTER: "subsNewQuestionFilter"
   SUBS_NEW_QUESTION_ELASTIC: "subsNewQuestionElastic"
+  SUBS_NEW_QUESTION_TO_USERS: "subsNewQuestionToUsers"
 
   # 2. new answer
   TOPIC_NEW_ANSWER: "topicNewAnswer"
@@ -27,7 +30,7 @@ data:
   SUBS_NEW_QUESTION_COMMENT_TO_QUESTION: "subsNewQuestionCommentToQuestions"
   SUBS_NEW_QUESTION_COMMENT_FILTER: "subsNewQuestionCommentFilter"
 
-  # 6. new question comment
+  # 6. new answer comment
   TOPIC_NEW_ANSWER_COMMENT: "topicNewAnswerComment"
   SUBS_NEW_ANSWER_COMMENT_TO_ANSWER: "subsNewAnswerCommentToAnswers"
   SUBS_NEW_ANSWER_COMMENT_TO_QUESTION: "subsNewAnswerCommentToQuestions"
