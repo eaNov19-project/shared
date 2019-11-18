@@ -22,7 +22,7 @@ public class CommentAnswerEntity {
     private String userId;
     private String answerId;
     private String questionId;
-
+    private Integer active;
     public CommentAnswer toCommentAnswerModel(){
         CommentAnswer commentAnswer = new CommentAnswer();
         commentAnswer.setId(this.id);
@@ -31,6 +31,7 @@ public class CommentAnswerEntity {
         commentAnswer.setCreated(this.date);
         commentAnswer.setAnswerId(this.answerId);
         commentAnswer.setQuestionId(this.questionId);
+        commentAnswer.setActive(this.active);
         return commentAnswer;
     }
 }

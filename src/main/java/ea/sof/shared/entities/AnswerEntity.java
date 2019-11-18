@@ -23,7 +23,7 @@ public class AnswerEntity {
     private Integer votes = 0;
     private List<CommentAnswerEntity> topComments = new ArrayList<>();
     private String questionId;
-
+    private Integer active;
     public void addAnswerComment(CommentAnswerEntity commentAnswerEntity) {
         topComments.add(commentAnswerEntity);
 

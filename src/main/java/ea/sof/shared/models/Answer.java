@@ -18,7 +18,7 @@ public class Answer {
     private Integer upvotes = 0;
     private List<CommentAnswer> topComments = new ArrayList<>();
     private String questionId;
-
+    private Integer active;
     private String userId;
     private String userName;
 }
