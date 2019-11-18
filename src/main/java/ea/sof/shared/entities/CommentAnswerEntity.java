@@ -21,6 +21,7 @@ public class CommentAnswerEntity {
 
     private String userId;
     private String answerId;
+    private String questionId;
 
     public CommentAnswer toCommentAnswerModel(){
         CommentAnswer commentAnswer = new CommentAnswer();
@@ -29,6 +30,7 @@ public class CommentAnswerEntity {
         commentAnswer.setBody(this.body);
         commentAnswer.setCreated(this.date);
         commentAnswer.setAnswerId(this.answerId);
+        commentAnswer.setQuestionId(this.questionId);
         return commentAnswer;
     }
 }

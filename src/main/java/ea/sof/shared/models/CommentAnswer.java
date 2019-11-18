@@ -17,5 +17,6 @@ public class CommentAnswer {
     private String userId;
     private String userName;
     private String answerId;
+    private String questionId;
 
 }
