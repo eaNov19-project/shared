@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 public class CommentAnswer {
     private String id;
     private String body;
-    private LocalDateTime date = LocalDateTime.now();
+    private LocalDateTime created = LocalDateTime.now();
 
     private String userId;
     private String userName;
