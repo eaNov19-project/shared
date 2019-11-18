@@ -13,5 +13,5 @@ public class QuestionQueueModel {
     private String id;
     private String title;
     private String body;
-
+    private Integer active;
 }

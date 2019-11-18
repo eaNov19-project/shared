@@ -17,5 +17,5 @@ public class CommentQuestion {
     private String userId;
     private String userName;
     private String questionId;
-
+    private Integer active;
 }

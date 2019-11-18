@@ -18,4 +18,5 @@ import java.util.List;
 public class AnswerQueueModel {
     private String id;
     private String body;
+    private Integer active;
 }

@@ -13,4 +13,5 @@ import lombok.Setter;
 public class CommentAnswerQueueModel {
     private String id;
     private String body;
+    private Integer active;
 }

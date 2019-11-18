@@ -21,5 +21,5 @@ public class Question {
     private Integer upvotes = 0;
     private List<CommentQuestion> topComments;
     private List<Answer> topAnswers;
-
+    private Integer active;
 }
