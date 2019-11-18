@@ -13,6 +13,7 @@ Pub/Sub - Messaging queue implementation from Google Cloud Platform.
 2. new answer
 	- Topic: `topicNewAnswer`
 	- Publisher: Answers service
+	- Payload: `AnswerQueueModel`
 	- Subscriber: `subsNewAnswerScoring` - for BG Scoring service
 	- Subscriber: `subsNewAnswerFilter` - for Content filter service
 	- Subscriber: `subsNewAnswerNotification` - for Notifications service
