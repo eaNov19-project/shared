@@ -1,5 +1,7 @@
 package ea.sof.shared.entities;
 
+import ea.sof.shared.models.CommentAnswer;
+import ea.sof.shared.models.CommentQuestion;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,4 +22,13 @@ public class CommentAnswerEntity {
     private String userId;
     private String answerId;
 
+    public CommentAnswer toCommentAnswerModel(){
+        CommentAnswer commentAnswer = new CommentAnswer();
+        commentAnswer.setId(this.id);
+        commentAnswer.setUserId(this.userId);
+        commentAnswer.setBody(this.body);
+        commentAnswer.setCreated(this.date);
+        commentAnswer.setAnswerId(this.answerId);
+        return commentAnswer;
+    }
 }
