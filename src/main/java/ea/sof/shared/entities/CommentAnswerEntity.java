@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 //@NoArgsConstructor
 //@Data
 //@Document(collection = "comments")
-public abstract class CommentAnswerEntity {
+public class CommentAnswerEntity {
 //    @Id
     private String id;
     private String body;
