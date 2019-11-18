@@ -27,7 +27,7 @@ data:
   SUBS_NEW_QUESTION_COMMENT_TO_QUESTION: "subsNewQuestionCommentToQuestions"
   SUBS_NEW_QUESTION_COMMENT_FILTER: "subsNewQuestionCommentFilter"
 
-  # 6. new question comment
+  # 6. new answer comment
   TOPIC_NEW_ANSWER_COMMENT: "topicNewAnswerComment"
   SUBS_NEW_ANSWER_COMMENT_TO_ANSWER: "subsNewAnswerCommentToAnswers"
   SUBS_NEW_ANSWER_COMMENT_TO_QUESTION: "subsNewAnswerCommentToQuestions"
