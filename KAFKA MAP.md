@@ -46,11 +46,13 @@ Pub/Sub - Messaging queue implementation from Google Cloud Platform.
 7. when question banned
 	- Topic: `topicBanQuestion`
 	- Publisher: Content filter service
+	- Payload: `question id`
 	- Subscriber: `subsBanQuestionToQuestion` - for Questions service
 
 8. when answer banned
 	- Topic: `topicBanAnswer`
 	- Publisher: Content filter service
+	- Payload: `answer id`
 	- Subscriber: `subsBanAnswerToAnswer` - for Answers service	
 
 9. after banned answer updated in Answers service
@@ -61,11 +63,13 @@ Pub/Sub - Messaging queue implementation from Google Cloud Platform.
 10. when question commend banned
 	- Topic: `topicBanQuestionComment`
 	- Publisher: Content filter service
+	- Payload: `question comment id`
 	- Subscriber: `subsBanQuestionCommentToComments` - for Comments service	
 
 11. when answer commend banned
 	- Topic: `topicBanAnswerComment`
 	- Publisher: Content filter service
+	- Payload: `answer comment id`
 	- Subscriber: `subsBanAnswerCommentToComments` - for Comments service	
 
 12. after banned QuestionComment updated in Comments service 
