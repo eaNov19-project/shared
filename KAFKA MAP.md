@@ -25,6 +25,7 @@ Pub/Sub - Messaging queue implementation from Google Cloud Platform.
 	
 4. answer voted up or down
 	- Topic: `topicAnswerVoted`
+	- Payload: `AnswerQueueModel`
 	- Publisher: Answers service
 	- Subscriber: `subsAnswerVoted` - for BG Scoring service
 
@@ -57,6 +58,7 @@ Pub/Sub - Messaging queue implementation from Google Cloud Platform.
 
 9. after banned answer updated in Answers service
 	- Topic: `topicUpdateBannedAnswer`
+	- Payload: `AnswerQueueModel`
 	- Publisher: Answers service
 	- Subscriber: `subsUpdateBannedAnswerScore` - for BG Scoring service
 
