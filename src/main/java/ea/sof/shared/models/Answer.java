@@ -1,6 +1,7 @@
 package ea.sof.shared.models;
 
 
+import ea.sof.shared.entities.CommentAnswerEntity;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -12,13 +13,15 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Answer {
+
     private String id;
+    private String userId;
     private String body;
-    private LocalDateTime date;
-    private Integer upvotes = 0;
+    private LocalDateTime created;
+    private LocalDateTime lastEdited;
+    private Integer votes = 0;
+    private Integer active = 1;
     private List<CommentAnswer> topComments = new ArrayList<>();
     private String questionId;
-    private Integer active;
-    private String userId;
-    private String userName;
+
 }
