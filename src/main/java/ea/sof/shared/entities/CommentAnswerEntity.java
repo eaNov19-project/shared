@@ -22,8 +22,8 @@ public class CommentAnswerEntity {
     private String userId;
     private String questionId;
     private String answerId;
-    private String questionId;
     private Integer active;
+
     public CommentAnswer toCommentAnswerModel(){
         CommentAnswer commentAnswer = new CommentAnswer();
         commentAnswer.setId(this.id);
