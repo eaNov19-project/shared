@@ -5,6 +5,7 @@ metadata:
   namespace: default
 data:
   KAFKA_BOOTSTRAP_SERVERS: "34.70.124.18:31090,34.68.183.147:31090,35.223.233.128:31090"
+  SERVICE_SECRET: "service-secret"
 
   # 1. new question
   TOPIC_NEW_QUESTION: "topicNewQuestion"
