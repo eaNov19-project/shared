@@ -2,8 +2,8 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ea2-ingress
-#  annotations:
-#    kubernetes.io/ingress.global-static-ip-name: 104.197.96.11
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: web-static-ip
 spec:
   rules:
     - http:
@@ -27,4 +27,9 @@ spec:
           - path: /answers/*
             backend:
               serviceName: answer-ms-service
+              servicePort: 8080
+
+          - path: /comments/*
+            backend:
+              serviceName: comment-ms-service
               servicePort: 8080
