@@ -54,7 +54,7 @@ public class QuestionEntity {
 
 	public void addAnswer(AnswerEntity answerEntity) {
 		topAnswers.add(answerEntity);
-		topAnswers = topAnswers.stream().sorted(Comparator.comparingInt(AnswerEntity::getVotes).reversed()).limit(10).collect(Collectors.toList());
+		topAnswers = topAnswers.stream().sorted(Comparator.comparingInt(AnswerEntity::getVotes).reversed()).limit(5).collect(Collectors.toList());
 	}
 
 	public void addQuestionComment(CommentQuestionEntity commentQuestionEntity) {

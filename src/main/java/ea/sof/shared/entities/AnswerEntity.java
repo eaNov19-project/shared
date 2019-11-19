@@ -1,25 +1,30 @@
 package ea.sof.shared.entities;
 
 
-import ea.sof.shared.queue_models.AnswerQueueModel;
-import lombok.AllArgsConstructor;
+import ea.sof.shared.models.Answer;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Getter
 @Setter
 public class AnswerEntity {
     public AnswerEntity(){}
 
-    public AnswerEntity(AnswerQueueModel model){
+    public AnswerEntity(Answer model){
         this.id = model.getId();
-        this.questionId = model.getQuestionId();
+        this.userId = model.getUserId();
         this.body = model.getBody();
+        this.created = model.getCreated();
+        this.lastEdited = model.getLastEdited();
+        this.votes = model.getVotes();
+        if (model.getTopComments() != null)
+            this.topComments = model.getTopComments().stream().map(x -> new CommentAnswerEntity(x)).collect(Collectors.toList());
+        this.questionId = model.getQuestionId();
         this.active = model.getActive();
     }
 

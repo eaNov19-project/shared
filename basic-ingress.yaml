@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ea2-ingress
+#  annotations:
+#    kubernetes.io/ingress.global-static-ip-name: 104.197.96.11
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /auth/*
+            backend:
+              serviceName: auth-ms-service
+              servicePort: 8080
+
+          - path: /questions/*
+            backend:
+              serviceName: question-ms-service
+              servicePort: 8080
+
+
+          - path: /users/*
+            backend:
+              serviceName: user-ms-service
+              servicePort: 8080
+
+          - path: /answers/*
+            backend:
+              serviceName: answer-ms-service
+              servicePort: 8080
