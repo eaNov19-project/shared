@@ -1,5 +1,6 @@
 package ea.sof.shared.showcases;
 
+import ea.sof.shared.Np;
 import ea.sof.shared.models.Car;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +27,7 @@ public interface SvCarShowcase {
 	// Example to put service secret to request. To service-to-service communications
 	// service-secret - will put header variable in the query
 	@RequestMapping("/cars/find/{id}")
-	Car findById(@PathVariable(value = "id") int id,  @RequestHeader("service-secret") String serviceSecret);
+	Car findById(@PathVariable(value = "id") int id,  @RequestHeader(Np.SecretHeader) String serviceSecret);
 
 	// This can be accessible without service secret
 	@RequestMapping("/cars/find")

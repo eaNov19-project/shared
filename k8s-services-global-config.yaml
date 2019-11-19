@@ -9,3 +9,4 @@ data:
 
   # SERVICE DISCOVERY
   QUESTIONS_SERVICE: "question-ms-service"
+  AUTHENTICATE_SERVICE: "auth-ms-service.default.svc.cluster.local:8080"

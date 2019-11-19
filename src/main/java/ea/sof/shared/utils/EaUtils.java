@@ -1,5 +1,7 @@
 package ea.sof.shared.utils;
 
+import ea.sof.shared.Np;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,13 +22,13 @@ public class EaUtils {
 	public static boolean isServiceAuthorized(HttpServletRequest request, String serviceSecret) {
 		System.out.print("Checking service secret... ");
 		boolean authorized = false;
-		if (request.getHeader("service-secret") != null) {
-			authorized = request.getHeader("service-secret").equals(serviceSecret);
+		if (request.getHeader(Np.SecretHeader) != null) {
+			authorized = request.getHeader(Np.SecretHeader).equals(serviceSecret);
 		}
 		if (authorized){
 			System.out.println("service authorized successfully");
 		} else{
-			System.out.println("service auth failed. Expected: " + serviceSecret + ", received: " + request.getHeader("service-secret"));
+			System.out.println("service auth failed. Expected: '" + serviceSecret + "', received: '" + request.getHeader(Np.SecretHeader) + "'");
 		}
 
 		return authorized;
