@@ -16,6 +16,7 @@ public class Answer {
 
     private String id;
     private String userId;
+    private String userEmail;
     private String body;
     private LocalDateTime created;
     private LocalDateTime lastEdited;

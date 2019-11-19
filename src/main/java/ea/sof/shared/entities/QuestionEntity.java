@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 public class QuestionEntity {
 	private String id;
 	private String userId;
+	private String userEmail;
 	private String title;
 	private String body;
 	private LocalDateTime created;
@@ -32,6 +33,7 @@ public class QuestionEntity {
 		Question questionModel = new Question();
 		questionModel.setId(this.id);
 		questionModel.setUserId(this.userId);
+		questionModel.setUserEmail(this.userEmail);
 		questionModel.setTitle(this.title);
 		questionModel.setBody(this.body);
 		questionModel.setCreated(this.created);

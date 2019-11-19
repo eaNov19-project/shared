@@ -14,6 +14,7 @@ public class CommentQuestionEntity {
 
     private String id;
     private String userId;
+    private String userEmail;
     private String body;
     private LocalDateTime created;
     private String questionId;
@@ -22,6 +23,7 @@ public class CommentQuestionEntity {
         CommentQuestion commentQuestion = new CommentQuestion();
         commentQuestion.setId(this.id);
         commentQuestion.setUserId(this.userId);
+        commentQuestion.setUserEmail(this.userEmail);
         commentQuestion.setBody(this.body);
         commentQuestion.setCreated(this.created);
         commentQuestion.setQuestionId(this.questionId);

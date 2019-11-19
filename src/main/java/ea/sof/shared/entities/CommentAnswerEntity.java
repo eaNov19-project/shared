@@ -32,6 +32,7 @@ public class CommentAnswerEntity {
 	private LocalDateTime created;
 
 	private String userId;
+	private String userEmail;
 	private String questionId;
 	private String answerId;
 	private Integer active;
@@ -40,6 +41,7 @@ public class CommentAnswerEntity {
 		CommentAnswer commentAnswer = new CommentAnswer();
 		commentAnswer.setId(this.id);
 		commentAnswer.setUserId(this.userId);
+		commentAnswer.setUserEmail(this.userEmail);
 		commentAnswer.setBody(this.body);
 		commentAnswer.setCreated(this.created);
 		commentAnswer.setAnswerId(this.answerId);

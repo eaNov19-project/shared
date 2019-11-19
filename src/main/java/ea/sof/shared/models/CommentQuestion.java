@@ -15,7 +15,7 @@ public class CommentQuestion {
     private LocalDateTime created = LocalDateTime.now();
 
     private String userId;
-    private String userName;
+    private String userEmail;
     private String questionId;
     private Integer active;
 }

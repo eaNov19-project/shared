@@ -18,6 +18,7 @@ public class AnswerEntity {
     public AnswerEntity(Answer model){
         this.id = model.getId();
         this.userId = model.getUserId();
+        this.userEmail = model.getUserEmail();
         this.body = model.getBody();
         this.created = model.getCreated();
         this.lastEdited = model.getLastEdited();
@@ -30,6 +31,7 @@ public class AnswerEntity {
 
     private String id;
     private String userId;
+    private String userEmail;
     private String body;
     private LocalDateTime created;
     private LocalDateTime lastEdited;
