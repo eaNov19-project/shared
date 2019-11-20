@@ -16,5 +16,5 @@ public interface MsAnswersShowcase {
 
     // Retrieve top 5 answers for given question
     @GetMapping("/answers/top5/{questionId}")
-    ResponseEntity<List<Answer>> getAnswersByQuestionId(@PathVariable("questionId") String questionId);
+    ResponseEntity<List<AnswerEntity>> getTop5AnswersByQuestionId(@PathVariable("questionId") String questionId);
 }
