@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -20,7 +21,7 @@ public class Question {
     private LocalDateTime created;
     private LocalDateTime lastEdited;
     private Integer upvotes = 0;
-    private List<CommentQuestion> topComments;
-    private List<Answer> topAnswers;
+    private List<CommentQuestion> topComments = new ArrayList<>();
+    private List<Answer> topAnswers = new ArrayList<>();
     private Integer active;
 }
