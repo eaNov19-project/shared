@@ -16,4 +16,5 @@ public class AnswerQueueModel {
     private String questionId;
     private String body;
     private Integer active;
+    private Integer votes = 0;
 }
