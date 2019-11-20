@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: ea2-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: web-static-ip
+    kubernetes.io/ingress.global-static-ip-name: web-static-ip2
 spec:
   rules:
     - http:
