@@ -8,5 +8,5 @@ data:
   SERVICE_SECRET: "service-secret"
 
   # SERVICE DISCOVERY
-  QUESTIONS_SERVICE: "question-ms-service"
+  QUESTIONS_SERVICE: "question-ms-service.default.svc.cluster.local:8080"
   AUTHENTICATE_SERVICE: "auth-ms-service.default.svc.cluster.local:8080"
