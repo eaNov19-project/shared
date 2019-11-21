@@ -9,7 +9,16 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Auth {
+
+    public Integer getUserId() {
+        return userId;
+    }
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
     private Integer userId;
     private String email;
     private String password;
+
 }
