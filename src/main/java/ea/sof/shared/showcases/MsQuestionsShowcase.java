@@ -11,5 +11,5 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 public interface MsQuestionsShowcase {
     @GetMapping("/questions/{questionId}/followers")
-    ResponseEntity<QuestionFollowers> getFollowersByQuestionId(@PathVariable("questionId") String questionId, @RequestHeader(Np.SecretHeader) String serviceSecret);
+    ResponseEntity<Response> getFollowersByQuestionId(@PathVariable("questionId") String questionId, @RequestHeader(Np.SecretHeader) String serviceSecret);
 }

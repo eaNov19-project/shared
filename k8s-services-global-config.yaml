@@ -7,6 +7,8 @@ data:
   KAFKA_BOOTSTRAP_SERVERS: "34.70.124.18:31090,34.68.183.147:31090,35.223.233.128:31090"
   SERVICE_SECRET: "service-secret"
 
+  ZIPKIN_SERVER_BASE_URL: "http://zipkin-server-service.default.svc.cluster.local:9411"
+
   # SERVICE DISCOVERY
   QUESTIONS_SERVICE: "question-ms-service.default.svc.cluster.local:8080"
   AUTHENTICATE_SERVICE: "auth-ms-service.default.svc.cluster.local:8080"

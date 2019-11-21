@@ -1,8 +1,6 @@
 package ea.sof.shared.models;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +9,9 @@ import java.util.Map;
 public class Response {
     private Boolean success;
     private String message = "";
+
+    private Object value;
+
     private Map<String, Object> data = new HashMap<>();
 
     public Response(){
